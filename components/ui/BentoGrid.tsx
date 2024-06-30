@@ -2,11 +2,6 @@
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Your component code
-
-
-// Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -39,7 +34,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -54,8 +48,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["JAVA", "NextJS", "GraphQL"];
+  const leftLists = ["ReactJS", "NextJS", "Typescript"];
+  const rightLists = ["Java", "ReactNative", "MongoDB"];
 
   const [copied, setCopied] = useState(false);
 
